@@ -1,0 +1,36 @@
+ALTER TABLE favourites DROP CONSTRAINT fk_favourites_user_id;
+ALTER TABLE favourites DROP CONSTRAINT fk_favourites_auction_id;
+
+ALTER TABLE bids DROP CONSTRAINT fk_bids_auction_id;
+ALTER TABLE bids DROP CONSTRAINT fk_bids_user_id;
+
+ALTER TABLE company DROP CONSTRAINT fk_users_company_id;
+
+ALTER TABLE user_role DROP CONSTRAINT fk_user_role_role_id;
+ALTER TABLE user_role DROP CONSTRAINT fk_user_role_user_id;
+
+ALTER TABLE auctions DROP CONSTRAINT fk_users_auction_user_id;
+
+ALTER TABLE auctions DROP COLUMN id;
+
+ALTER TABLE auctions ADD COLUMN id SERIAL PRIMARY KEY;
+
+
+ALTER TABLE users DROP COLUMN id;
+
+ALTER TABLE users ADD COLUMN id SERIAL PRIMARY KEY;
+
+
+ALTER TABLE company DROP COLUMN id;
+
+ALTER TABLE company ADD COLUMN id SERIAL PRIMARY KEY;
+
+
+ALTER TABLE roles DROP COLUMN id;
+
+ALTER TABLE roles ADD COLUMN id SERIAL PRIMARY KEY;
+
+
+ALTER TABLE bids DROP COLUMN id;
+
+ALTER TABLE bids ADD COLUMN id SERIAL PRIMARY KEY;

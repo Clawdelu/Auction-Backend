@@ -1,0 +1,1 @@
+ALTER TABLE "media_files" ADD FOREIGN KEY ("auction_id") REFERENCES "auctions" ("id");

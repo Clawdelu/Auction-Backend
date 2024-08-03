@@ -1,0 +1,1 @@
+ALTER TABLE users ALTER COLUMN profile_picture drop not null;

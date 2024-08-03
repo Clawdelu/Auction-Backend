@@ -1,0 +1,2 @@
+ALTER TABLE recovery_tokens DROP COLUMN id;
+ALTER TABLE recovery_tokens ADD COLUMN id SERIAL PRIMARY KEY;

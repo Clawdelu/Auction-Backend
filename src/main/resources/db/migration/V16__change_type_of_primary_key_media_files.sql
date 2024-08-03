@@ -1,0 +1,3 @@
+ALTER TABLE media_files DROP COLUMN id;
+
+ALTER TABLE media_files ADD COLUMN id SERIAL PRIMARY KEY;
